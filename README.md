@@ -1,7 +1,4 @@
----
-typora-root-url: src\main\resources
-typora-copy-images-to: src\main\resources
----
+
 
 ejb-demo(No code  temporarily)
 ==============
