@@ -1,3 +1,8 @@
+---
+typora-root-url: src\main\resources
+typora-copy-images-to: src\main\resources
+---
+
 ejb-demo(No code  temporarily)
 ==============
 
@@ -216,7 +221,7 @@ The **remote interface** defines the business and lifecycle methods that are spe
 
 
 
-![jeett_dt_020](C:\Users\t480s\Desktop\jeett_dt_020.png)
+![jeett_dt_020](/jeett_dt_020.png)
 
 ​					Figure 32-1 Interfaces for an Enterprise Bean with Remote Access
 
@@ -282,7 +287,7 @@ Because remote calls are likely to be slower than local calls, the parameters in
 
 ## 3.1  The Lifecycle of Stateful Session Bean
 
-![jeett_dt_021](C:\Users\t480s\Desktop\jeett_dt_021.png)
+![jeett_dt_021](/jeett_dt_021.png)
 
 
 
@@ -296,7 +301,7 @@ Your code controls the invocation of only one lifecycle method: the method annot
 
 ## 3.2  The Lifecycle of Stateless Session Bean
 
-![jeett_dt_022](C:\Users\t480s\Desktop\jeett_dt_022.png)
+![jeett_dt_022](/jeett_dt_022.png)
 
 The EJB container typically creates and maintains a pool of stateless session beans, beginning the stateless session bean's lifecycle. The container performs any dependency injection and then invokes the method annotated `@PostConstruct`, if it exists. The bean is now ready to have its business methods invoked by a client.
 
@@ -312,7 +317,7 @@ At the end of the lifecycle, the EJB container calls the method annotated `@PreD
 
 ## 3.4  The Lifecycle of Message-Driven Bean
 
-![jeett_dt_023](C:\Users\t480s\Desktop\jeett_dt_023.png)
+![jeett_dt_023](/jeett_dt_023.png)
 
 The EJB container usually creates a pool of message-driven bean instances. For each instance, the EJB container performs these tasks.
 
