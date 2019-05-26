@@ -7,7 +7,6 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebServlet;
 
-import com.client.LocalTestClient;
 import com.model.Patient;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -29,10 +28,6 @@ import java.util.List;
 @Stateful
 public class MyUI extends UI {
 
-    //TODO: here is a problem
-    @Inject
-    LocalTestClient localTestClient;// = new LocalTestClient()
-
     private Grid grid;
 
     @Override
@@ -52,10 +47,10 @@ public class MyUI extends UI {
                     + ", it works!"));
 
 
-            List<Patient> patientList = localTestClient.getPatients();
-            grid.addRow(patientList.get(0).getId(),
-                        patientList.get(0).getName(),
-                        patientList.get(0).getAge());
+//            List<Patient> patientList = localTestClient.getPatients();
+//            grid.addRow(patientList.get(0).getId(),
+//                        patientList.get(0).getName(),
+//                        patientList.get(0).getAge());
 
         });
         
